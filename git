@@ -1,1 +1,73 @@
-git init
+
+git & GitHub Crash Course For Beginners
+
+
+/Users/yanqingli/Desktop/myproject/.git/
+1. git init
+
+2. touch .gitignore # /dir
+
+3. git config --global user.name 'Yanqing'
+
+4. git config --global user.email 'e@e.com'
+
+
+5.  git config --list
+
+modify files
+
+6. git status
+ # check after each step
+7. git add test.html  # add one
+
+8.git rm --cached test.html # remove one
+  # git reset   remove all files from staging
+9. git add .   # add all
+
+10. git status
+
+11. git commit -m 'first commit'
+
+12. touch  log.txt
+
+put log.txt under .gitignore
+
+13. git diff # changes after last commit
+
+******************branch************
+14. git branch login
+
+15. bit checkout login
+
+16. git branch
+
+17. touch login.txt test branch vs master
+
+18. git add, git commit
+
+19. git checkout master
+     notice that login.txt is gone since it is created under branch login
+
+20. git merge login
+
+
+
+********************remote**********
+create new repository
+
+readme.md files
+git remote
+
+21. git remote add origin https://github.com/li42125msa/login-test.git
+# add remote as origin
+
+git remote
+
+22, git push -u origin master
+
+touch readme.md
+
+git add .
+git commit -m 'read me'
+
+git push
