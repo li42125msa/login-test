@@ -22,11 +22,14 @@ modify files
 
 8.git rm --cached test.html # remove one
   # git reset   remove all files from staging
-9. git add .   # add all
+9. git add .   # add all git add -A
 
 10. git status
 
-11. git commit -m 'first commit'
+11. git commit -m 'first commit' or
+#git commit -a -m 'first commit' if no new files created 
+
+ check by git log
 
 12. touch  log.txt
 
@@ -45,10 +48,23 @@ put log.txt under .gitignore
 
 18. git add, git commit
 
+18.a git push -u origin login
+#push a branch to remote
+
 19. git checkout master
      notice that login.txt is gone since it is created under branch login
 
+19.a pit pull origin master
+# in case need to pull latest remote to master
 20. git merge login
+
+20.a git branch --merged
+
+20.b git branch -d login
+
+20.c git branch -a
+
+20.d git push origin --delete login # in case branch is in remote
 
 
 
@@ -61,8 +77,11 @@ git remote
 21. git remote add origin https://github.com/li42125msa/login-test.git
 # add remote as origin
 
-git remote
+git remote -v # to see the remote
+git branch -a include local and remote branches
 
+21.a  git pull origin master
+# in case any change since last commit needed
 22, git push -u origin master
 
 touch readme.md
@@ -70,4 +89,10 @@ touch readme.md
 git add .
 git commit -m 'read me'
 
-git push
+24. git push
+
+add terminal the folder
+
+25. git clone https://github.com/li42125msa/login-test.git .
+# . will not create a folder
+26. git pull
