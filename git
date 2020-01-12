@@ -27,7 +27,7 @@ modify files
 10. git status
 
 11. git commit -m 'first commit' or
-#git commit -a -m 'first commit' if no new files created 
+#git commit -a -m 'first commit' if no new files created
 
  check by git log
 
